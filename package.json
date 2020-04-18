@@ -1,0 +1,70 @@
+{
+  "name": "cpanel",
+  "version": "1.0.0",
+  "description": "a clipboard panel",
+  "main": "main.js",
+  "build": {
+    "appId": "jerry.zhao.cpanel",
+    "productName": "cpanel",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "files": [
+      "!.vscode/**/*",
+      "!image.png",
+      "!cpanel-darwin-x64/**/*",
+      "!build/**/*"
+    ],
+    "dmg": {
+      "window": {
+        "width": 540,
+        "height": 380
+      }
+    },
+    "linux": {
+      "target": [
+        "deb",
+        "tar.gz"
+      ],
+      "depends": [],
+      "category": "Utility",
+      "packageCategory": "Utility"
+    },
+    "win": {
+      "target": "NSIS"
+    },
+    "nsis": {
+      "artifactName": "${productName}_Setup_${version}.${ext}"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dev": "export NODE_ENV='development' && electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [
+    "clipboard"
+  ],
+  "author": "Jerry",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^4.1.4",
+    "electron-builder": "^20.39.0",
+    "electron-packager": "^13.1.1"
+  },
+  "dependencies": {
+    "create-hash": "^1.2.0",
+    "electron-log": "^3.0.5",
+    "electron-store": "^3.2.0",
+    "fs": "0.0.1-security",
+    "fs-jetpack": "^2.2.2",
+    "image-size": "^0.7.4",
+    "install": "^0.12.2",
+    "npm": "^6.9.0",
+    "tocktimer": "^1.0.12",
+    "vue": "^2.6.10",
+    "vue-material": "^1.0.0-beta-10.2"
+  }
+}
