@@ -62,7 +62,7 @@
     "fs-jetpack": "^2.2.2",
     "image-size": "^0.7.4",
     "install": "^0.12.2",
-    "npm": "^6.9.0",
+    "npm": "^6.13.4",
     "tocktimer": "^1.0.12",
     "vue": "^2.6.10",
     "vue-material": "^1.0.0-beta-10.2"
